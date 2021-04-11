@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "deploy:surge": "surge -p ./app/public -d $npm_package_name-team-2.surge.sh"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
