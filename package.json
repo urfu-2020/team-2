@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "surge": "0.23.0"
   }
 }
