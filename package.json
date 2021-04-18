@@ -15,7 +15,7 @@
 		"lint": "npm-run-all --parallel lint:*",
 		"lint:css": "echo \"Warning: no css files\"",
 		"lint:js": "eslint --fix app/",
-    "deploy:surge": "surge -p ./app/public -d kilogram-team-2.surge.sh"
+		"deploy:surge": "surge -p ./app/public -d kilogram-team-2.surge.sh"
 	},
 	"license": "ISС",
 	"devDependencies": {
@@ -30,6 +30,6 @@
 		"stylelint-config-standard": "^21.0.0",
 		"stylelint-order": "^4.1.0",
 		"stylelint-prettier": "^1.2.0",
-    "surge": "0.23.0"
+		"surge": "0.23.0"
 	}
 }
