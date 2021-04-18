@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-
+    "deploy:surge": "surge -p ./app/public -d kilogram-team-2.surge.sh"
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "surge": "0.23.0"
   }
 }
