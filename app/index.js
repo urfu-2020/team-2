@@ -8,4 +8,5 @@ app.get("/", (req, res) => {
 app.all("*", (req, res) => {
 	res.sendStatus(404)
 })
+
 app.listen(process.env.PORT || 80)
