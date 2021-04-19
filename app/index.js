@@ -1,12 +1,26 @@
-const express = require('express');
-const app = express();
+import React from "react"
+import ReactDOM from "react-dom"
+import "./index.css"
+import App from "./App"
+import store from "./app/store"
+import { Provider } from "react-redux"
 
-app.get('/', (req, res) => {
-    res.send(`Hello, world!`);
-});
+const express = require("express")
+const app = express()
 
-app.all('*', (req, res) => {
-    res.sendStatus(404);
-});
+app.get("/", (req, res) => {
+	ReactDOM.render(
+		<React.StrictMode>
+			<Provider store={store}>
+				<App />
+			</Provider>
+		</React.StrictMode>,
+		document.getElementById("root")
+	)
+})
 
-app.listen(process.env.PORT || 80);
+app.all("*", (req, res) => {
+	res.sendStatus(404)
+})
+
+app.listen(process.env.PORT || 80)
