@@ -1,4 +1,4 @@
-import { Avatar } from "@material-ui/core"
+import {Avatar} from "@material-ui/core"
 import React from "react"
 import "./chatHeader.scss"
 import CallRoundedIcon from "@material-ui/icons/CallRounded"

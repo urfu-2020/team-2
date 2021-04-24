@@ -2,7 +2,7 @@ import React from "react"
 import "./Users.scss"
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded"
 import AddIcon from "@material-ui/icons/Add"
-import UserItem from "./UserItem"
+import userItem from "./UserItem"
 const Users = () => {
 	const hide = () => {
 		document.getElementsByTagName("h2")[0].classList.add("hidden")
@@ -57,7 +57,7 @@ const Users = () => {
 					</div>
 				</div>
 			</div>
-			{usersInfo.map((el) => UserItem(el[0], el[1], el[2]))}
+			{usersInfo.map((el) => userItem(el[0], el[1], el[2]))}
 		</div>
 	)
 }
