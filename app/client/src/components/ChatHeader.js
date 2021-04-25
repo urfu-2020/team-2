@@ -1,12 +1,12 @@
 import {Avatar} from "@material-ui/core"
 import React from "react"
-import "./chatHeader.scss"
+import "./ChatHeader.scss"
 import CallRoundedIcon from "@material-ui/icons/CallRounded"
 import VideocamRoundedIcon from "@material-ui/icons/VideocamRounded"
 import MoreHorizRoundedIcon from "@material-ui/icons/MoreHorizRounded"
 const ChatHeader = () => {
 	return (
-		<div className="chatHeader">
+		<div className="ChatHeader">
 			<div className="UserInfo">
 				<Avatar />
 				<div className="UserBody">

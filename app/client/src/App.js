@@ -2,6 +2,7 @@ import React from "react"
 import "./App.scss"
 import Chat from "./components/Chat"
 import Users from "./components/Users"
+import LoginButton from "./components/LoginButton"
 
 /**
  * It returns main app (markup)
@@ -10,6 +11,7 @@ import Users from "./components/Users"
 function App() {
 	return (
 		<div className="Messenger">
+			<LoginButton />
 			<Users />
 			<Chat />
 		</div>
