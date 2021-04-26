@@ -16,13 +16,13 @@ const ChatHeader = () => {
 			</div>
 			<div className="HeaderIcons">
 				<div className="HeaderIconWrapper">
-					<CallRoundedIcon fontSize="medium" />
+					<CallRoundedIcon fontSize="default" />
 				</div>
 				<div className="HeaderIconWrapper">
-					<VideocamRoundedIcon fontSize="medium" />
+					<VideocamRoundedIcon fontSize="default" />
 				</div>
 				<div className="HeaderIconWrapper">
-					<MoreHorizRoundedIcon fontSize="medium" />
+					<MoreHorizRoundedIcon fontSize="default" />
 				</div>
 			</div>
 		</div>

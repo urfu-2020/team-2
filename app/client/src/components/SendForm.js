@@ -7,9 +7,9 @@ const SendForm = () => {
 		<form className="InputForm">
 			<input type="text" className="Sendinput" placeholder="Your message..." />
 			<div className="FormIcons">
-				<InsertEmoticonRoundedIcon fontSize="normale" />
-				<ImageRoundedIcon fontSize="normale" />
-				<SendRoundedIcon fontSize="normale" />
+				<InsertEmoticonRoundedIcon fontSize="default" />
+				<ImageRoundedIcon fontSize="default" />
+				<SendRoundedIcon fontSize="default" />
 			</div>
 		</form>
 	)

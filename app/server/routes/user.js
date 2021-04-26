@@ -5,7 +5,6 @@ const config = require("../config")
 const request = require("request")
 
 router.get("/", (req, res) => {
-	console.log(`user requested ${req.session.token}`)
 	if (req.session.token) {
 		request(
 			{

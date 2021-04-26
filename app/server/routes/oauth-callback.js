@@ -20,7 +20,6 @@ router.get("/", (req, res) => {
 
 		(error, response, body) => {
 			req.session.token = body.match(tokenRegex)[1]
-			console.log(req.session)
 			// redirect to the React app
 			res.redirect(`http://localhost:${config.clientPort}`)
 		},
