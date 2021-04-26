@@ -1,9 +1,14 @@
 {
   "dependencies": {
-    "express": "^4.17.1",
     "typescript": "^4.2.4"
   },
   "scripts": {
     "start": "node index.js"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "request": "^2.88.2"
   }
 }
