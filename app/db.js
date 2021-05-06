@@ -1,7 +1,26 @@
-import {Sequelize} from "sequelize-typescript";
+import {Sequelize, Model, DataTypes} from "sequelize";
+const sequelize = new Sequelize('TUT_DOLZHEN_BYT_URI');
+
+class User extends Model {}
+
+User.init({
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true
+    },
+    firstName: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    lastName: {
+        type: DataTypes.STRING
+    }
+}, {
+    sequelize,
+    modelName: 'User'
+});
 
 function initialize() {
-    const sequelize = new Sequelize('TUT_DOLZHEN_BYT_URI');
     authenticate(sequelize);
 }
 
@@ -14,4 +33,4 @@ async function authenticate(sequelize) {
     }
 }
 
-export {initialize}
+export {initialize, User}
