@@ -30,6 +30,10 @@
 		"stylelint-config-standard": "^21.0.0",
 		"stylelint-order": "^4.1.0",
 		"stylelint-prettier": "^1.2.0",
-		"surge": "0.23.0"
+		"surge": "0.23.0",
+		"pg": "^8.6.0",
+		"sequelize": "^6.6.2",
+		"sequelize-typescript": "^2.1.0",
+		"reflect-metadata": "^0.1.13"
 	}
 }
