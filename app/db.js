@@ -1,19 +1,20 @@
-import {Sequelize, Model, DataTypes} from "sequelize";
-const sequelize = new Sequelize('TUT_DOLZHEN_BYT_URI');
+const seq = require("sequelize");
+let uri = process.env.DB_URI;
+const sequelize = new seq.Sequelize(uri);
 
-class User extends Model {}
+class User extends seq.Model {}
 
 User.init({
     id: {
-        type: DataTypes.INTEGER,
+        type: seq.DataTypes.INTEGER,
         primaryKey: true
     },
     firstName: {
-        type: DataTypes.STRING,
+        type: seq.DataTypes.STRING,
         allowNull: false
     },
     lastName: {
-        type: DataTypes.STRING
+        type: seq.DataTypes.STRING
     }
 }, {
     sequelize,
@@ -22,6 +23,7 @@ User.init({
 
 function initialize() {
     authenticate(sequelize);
+    sequelize.sync();
 }
 
 async function authenticate(sequelize) {
@@ -33,4 +35,4 @@ async function authenticate(sequelize) {
     }
 }
 
-export {initialize, User}
+module.exports = {initialize, User};
