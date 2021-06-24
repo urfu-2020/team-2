@@ -3,7 +3,11 @@ import React from "react"
 const config = require("../../config")
 const LogoutButton = () => {
 	return (
-		<a href={`http://localhost:${config.serverPort}/logout`}>Logout</a>
+		<a
+			href={`https://kilogram-team-2.herokuapp.com:${config.serverPort}/logout`}
+		>
+      Logout
+		</a>
 	)
 }
 
