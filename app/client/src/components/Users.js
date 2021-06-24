@@ -42,9 +42,9 @@ const Users = () => {
 	return (
 		<div className="users__container">
 			<div className="header__icons">
-				<div className="red__icon"></div>
-				<div onClick={() => hide()} className="yellow__icon"></div>
-				<div onClick={() => show()} className="green__icon"></div>
+				<div className="red__icon"/>
+				<div onClick={() => hide()} className="yellow__icon"/>
+				<div onClick={() => show()} className="green__icon"/>
 			</div>
 			<div className="Category">
 				<h2>Recent</h2>
