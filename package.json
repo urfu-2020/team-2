@@ -1,73 +1,73 @@
 {
-	"name": "kilogram",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"dependencies": {
-		"@material-ui/core": "^4.11.3",
-		"@material-ui/icons": "^4.11.2",
-		"@reduxjs/toolkit": "^1.5.1",
-		"@testing-library/jest-dom": "^5.11.10",
-		"@testing-library/react": "^11.2.6",
-		"@testing-library/user-event": "^13.1.5",
-		"express": "^4.17.1",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"react-redux": "^7.2.3",
-		"react-scripts": "^4.0.3",
-		"sass": "^1.32.10",
-		"typescript": "^4.2.4"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/urfu-2020/team-2.git"
-	},
-	"scripts": {
-		"lint": "npm-run-all --parallel lint:*",
-		"lint:css": "echo \"Warning: no css files\"",
-		"lint:scss": "npx stylelint app/**/*.scss --fix",
-		"lint:js": "eslint --fix app/",
-		"deploy:surge": "surge -p app/src/client/public -d kilogram-team-2.surge.sh",
-		"run-server": "npm start --prefix ./app/server",
-		"run-client": "npm start --prefix ./app/client",
-		"start": "concurrently \"npm run run-server\" \"npm run run-client\"",
-		"build": "cd app && npm run build",
-		"test": "cd app && npm run test",
-		"eject": "cd app && react-scripts eject"
-	},
-	"eslintConfig": {
-		"extends": "react-app"
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"license": "ISС",
-	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^4.21.0",
-		"@typescript-eslint/parser": "^4.21.0",
-		"concurrently": "^6.0.2",
-		"dotenv": "^8.2.0",
-		"eslint": "^7.24.0",
-		"eslint-config-google": "^0.14.0",
-		"npm-run-all": "^4.1.5",
-		"npx": "^10.2.2",
-		"prettier": "^2.2.1",
-		"stylelint": "^13.12.0",
-		"stylelint-config-idiomatic-order": "^8.1.0",
-		"stylelint-config-prettier": "^8.0.2",
-		"stylelint-config-rational-order": "^0.1.2",
-		"stylelint-config-standard": "^21.0.0",
-		"stylelint-order": "^4.1.0",
-		"stylelint-prettier": "^1.2.0",
-		"surge": "0.23.0"
-	}
+  "name": "kilogram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^13.1.5",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.3",
+    "react-scripts": "^4.0.3",
+    "sass": "^1.32.10",
+    "typescript": "^4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/urfu-2020/team-2.git"
+  },
+  "scripts": {
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:css": "echo \"Warning: no css files\"",
+    "lint:scss": "npx stylelint app/**/*.scss --fix",
+    "lint:js": "eslint --fix app/",
+    "deploy:surge": "surge -p app/src/client/public -d kilogram-team-2.surge.sh",
+    "run-server": "npm start --prefix ./app/server",
+    "run-client": "npm start --prefix ./app/client",
+    "start": "concurrently \"npm run run-server\" \"npm run run-client\"",
+    "build": "cd app/client && npm run build",
+    "test": "cd app/client && npm run test",
+    "eject": "cd app/client && react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "ISС",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "concurrently": "^6.0.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.24.0",
+    "eslint-config-google": "^0.14.0",
+    "npm-run-all": "^4.1.5",
+    "npx": "^10.2.2",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.12.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0",
+    "surge": "0.23.0"
+  }
 }
