@@ -1,0 +1,35 @@
+.ChatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  // box-shadow: 0px 21px 20px -11px rgba(34, 60, 80, 0.28);
+}
+.UserInfo {
+  display: flex;
+  align-items: center;
+}
+.UserBody {
+  margin-left: 20px;
+}
+.UserBody h3 {
+  color: #fff;
+}
+.UserBody p {
+  color: lightgray;
+}
+.HeaderIcons {
+  color: #fff;
+  display: flex;
+}
+.HeaderIconWrapper {
+  background-color: rgba(0, 0, 0, 0.38);
+  height: 40px;
+  width: 40px;
+  margin-right: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
