@@ -14,30 +14,30 @@
   display: none;
 }
 .chat {
-  flex: 0.75;
   display: flex;
+  flex: 0.75;
   flex-direction: column;
+  padding: 0 40px 40px;
   background-color: var(--chat-bg);
   border-radius: 0 17px 17px 0;
-  padding: 0 40px 40px;
   backdrop-filter: blur(8px);
 }
 .InputForm {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
   align-items: center;
-  background-color: #00000061;
+  justify-content: space-between;
+  width: 100%;
   padding: 15px;
+  background-color: #00000061;
   border-radius: 17px;
 }
 .Sendinput {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  font-size: 17px;
-  color: #fff;
   flex: 1;
+  color: #fff;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  outline: none;
   &::placeholder {
     color: lightgray;
   }
@@ -46,7 +46,7 @@
   color: #8175ff;
 }
 .FormIcons .MuiSvgIcon-root {
+  margin-right: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-right: 1rem;
 }

@@ -1,10 +1,10 @@
 .UserCard {
   display: flex;
-  padding: 20px 10px;
-  justify-content: center;
   align-items: center;
-  border-radius: 17px;
+  justify-content: center;
   margin-right: 7px;
+  padding: 20px 10px;
+  border-radius: 17px;
   cursor: pointer;
   transition: all 0.2s linear;
   &:hover {
@@ -23,14 +23,14 @@
 .Con__body {
   display: flex;
   justify-content: space-between;
-  color: lightgray;
   width: 100%;
+  color: lightgray;
 }
 
 .Con__body p:first-child {
   width: 9rem;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 

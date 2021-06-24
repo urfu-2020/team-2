@@ -1,8 +1,8 @@
 .ChatBody {
-  flex: 1;
-  margin: 1rem 0;
   display: flex;
+  flex: 1;
   flex-direction: column-reverse;
+  margin: 1rem 0;
   overflow: auto;
 }
 .Message {
@@ -13,11 +13,11 @@
   color: #fff;
 }
 .MessageBody {
-  background-color: #8175ff;
-  padding: 10px;
-  border-radius: 17px;
   max-width: 60%;
   margin: 0 1rem;
+  padding: 10px;
+  background-color: #8175ff;
+  border-radius: 17px;
 }
 .my {
   flex-direction: row-reverse;

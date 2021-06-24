@@ -1,11 +1,11 @@
 .users__container {
   flex: 0.25;
-  background-color: var(--user-bg);
   height: 100%;
-  border-radius: 17px 0 0 17px;
   padding-left: 10px;
-  backdrop-filter: blur(8px);
   overflow: auto;
+  background-color: var(--user-bg);
+  border-radius: 17px 0 0 17px;
+  backdrop-filter: blur(8px);
 }
 .header__icons {
   display: flex;
@@ -14,8 +14,8 @@
 .red__icon,
 .yellow__icon,
 .green__icon {
-  height: 14px;
   width: 14px;
+  height: 14px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -23,34 +23,34 @@
   background-color: var(--red-icon);
 }
 .yellow__icon {
-  background-color: var(--yellow-icon);
   margin: 0 0.4rem;
+  background-color: var(--yellow-icon);
 }
 .green__icon {
   background-color: var(--green-icon);
 }
 .Category {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 0 20px 10px;
 }
 .Category h2 {
   color: #fff;
 }
 .Cate__Icons {
-  color: #fff;
   display: flex;
+  color: #fff;
 }
 .IconWrapper {
-  background-color: rgb(255 255 255 / 15%);
-  height: 40px;
-  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   margin-right: 1rem;
+  background-color: rgb(255 255 255 / 15%);
+  border-radius: 50%;
   cursor: pointer;
 }
 
