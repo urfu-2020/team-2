@@ -1,0 +1,4 @@
+CLIENT_ID=a1f951c2dc7c78db96f7
+CLIENT_SECRET=6c8c2ab4702d47efe1a664b66acd911906429dac
+REDIRECT_URI=https://kilogram-team-2.herokuapp.com:9000/oauth-callback
+HOST=https://kilogram-team-2.herokuapp.com
