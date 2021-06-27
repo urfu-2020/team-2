@@ -8,7 +8,7 @@ const ChatHeader = () => {
 	return (
 		<div className="ChatHeader">
 			<div className="UserInfo">
-				<Avatar />
+				<Avatar src="https://thiscatdoesnotexist.com/" />
 				<div className="UserBody">
 					<h3>User</h3>
 					<p>Last seen at 20:47</p>

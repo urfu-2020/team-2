@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from "react"
 import "./App.scss"
-import Chat from "./components/Chat"
+import chat from "./components/Chat"
 import Users from "./components/Users"
 import LoginButton from "./components/Auth/LoginButton"
-import LogoutButton from "./components/Auth/LogutButton"
 
-const config = require("./config")
+import {config} from "./config"
 
 /**
  * It returns main app (markup)
@@ -16,25 +15,27 @@ const config = require("./config")
 function App() {
 	const [user, setUser] = useState({})
 	useEffect(() => {
-		fetch(`https://kilogram-team-2.herokuapp.com:${config.serverPort}/user`, {
+		fetch(`${config.host}:${config.serverPort}/user`, {
 			credentials: "include",
 		})
 			.then((response) => response.json())
 			.then((response) => {
-				console.log("response")
-				console.log(response)
-				setUser(response)
+				// console.log("response")
+				// console.log(response)
+				if (response !== {}) {
+					setUser(response)
+				}
 			})
 	}, [])
 	return (
 		<div className="Messenger">
+			{/* {console.log("Hello,", user.login)} */}
 			{user.login === undefined ? (
 				<LoginButton />
 			) : (
 				<>
-					<LogoutButton />
 					<Users />
-					<Chat />
+					{chat(user.login, user.avatar_url)}
 				</>
 			)}
 		</div>

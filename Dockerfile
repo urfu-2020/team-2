@@ -1,5 +1,5 @@
 # Базовый слой
-FROM node:10 
+FROM node:10
 
 # Копируем всё что нужно из локальной папки в образ
 COPY app /app
@@ -13,4 +13,4 @@ RUN npm ci --production
 EXPOSE 80
 
 # При старте контейнер выполнит эту команду – запустит наше приложение
-CMD node app/index.js
+CMD ts-node app/index.ts

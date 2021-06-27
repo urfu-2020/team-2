@@ -27,7 +27,7 @@ router.get("/", (req, res) => {
 					avatar_url: userFullInfo.avatar_url,
 					name: userFullInfo.name,
 				}
-				console.log(userInfo)
+				// console.log(userInfo)
 				res.send(userInfo)
 			},
 		)

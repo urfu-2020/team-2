@@ -2,8 +2,9 @@
   "dependencies": {
     "typescript": "^4.2.4"
   },
+  "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "ts-node index.ts"
   },
   "devDependencies": {
     "cors": "^2.8.5",

@@ -22,7 +22,7 @@ router.get("/", (req, res) => {
 		(error, response, body) => {
 			req.session.token = body.match(tokenRegex)[1]
 			// redirect to the React app
-			res.redirect(`https://kilogram-team-2.herokuapp.com:${config.clientPort}`)
+			res.redirect(`${config.host}:${config.clientPort}`)
 		},
 	)
 })

@@ -1,16 +1,16 @@
 import React from "react"
 import "./Chat.scss"
-import ChatBody from "./ChatBody"
+import chatBody from "./ChatBody"
 import ChatHeader from "./ChatHeader"
 import SendForm from "./SendForm"
-const Chat = () => {
+const chat = (login, avatarUrl) => {
 	return (
 		<div className="chat">
 			<ChatHeader />
-			<ChatBody />
+			{chatBody(login, avatarUrl)}
 			<SendForm />
 		</div>
 	)
 }
 
-export default Chat
+export default chat

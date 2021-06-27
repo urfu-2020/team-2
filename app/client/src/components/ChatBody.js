@@ -1,19 +1,19 @@
 import React from "react"
 import "./ChatBody.scss"
-import Message from "./Message"
-import MyMessage from "./MyMessage"
-const ChatBody = () => {
+import message from "./Message"
+import myMessage from "./MyMessage"
+const chatBody = (login, avatarUrl) => {
 	return (
 		<div className="ChatBody">
-			<MyMessage />
-			<Message />
-			<Message />
-			<Message />
-			<MyMessage />
-			<MyMessage />
-			<Message />
+			{myMessage(avatarUrl)}
+			{message(login)}
+			{message(login)}
+			{message(login)}
+			{myMessage(avatarUrl)}
+			{myMessage(avatarUrl)}
+			{message(login)}
 		</div>
 	)
 }
 
-export default ChatBody
+export default chatBody

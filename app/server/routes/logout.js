@@ -5,7 +5,7 @@ const config = require("../config")
 
 router.get("/", (req, res) => {
 	req.session.destroy()
-	res.redirect(`https://kilogram-team-2.herokuapp.com:${config.clientPort}`)
+	res.redirect(`${config.host}:${config.clientPort}`)
 })
 
 module.exports = router

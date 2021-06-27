@@ -1,10 +1,10 @@
 import {Avatar} from "@material-ui/core"
 import React from "react"
 import "./UsersList.scss"
-const UserItem = (name, lastMsg, timeMsg) => {
+const userItem = (name, lastMsg, timeMsg) => {
 	return (
 		<div className="UserCard">
-			<Avatar />
+			<Avatar src="https://thiscatdoesnotexist.com/" />
 			<div className="Con__info">
 				<h3>{name}</h3>
 				<div className="Con__body">
@@ -16,4 +16,4 @@ const UserItem = (name, lastMsg, timeMsg) => {
 	)
 }
 
-export default UserItem
+export default userItem

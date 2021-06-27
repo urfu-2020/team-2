@@ -3,12 +3,13 @@ import "./Users.scss"
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded"
 import AddIcon from "@material-ui/icons/Add"
 import userItem from "./UserItem"
+import {config} from "../config"
 const Users = () => {
 	const hide = () => {
 		document.getElementsByTagName("h2")[0].classList.add("hidden")
 		document.querySelector(".IconWrapper").classList.add("hidden")
 		const cons = document.getElementsByClassName("Con__info")
-		console.log(cons)
+		// console.log(cons)
 		for (const con of cons) con.classList.add("hidden")
 		document.querySelector(".users__container").style.flex = "0.07"
 		document.querySelector(".chat").style.flex = "0.93 1"
@@ -22,8 +23,7 @@ const Users = () => {
 		for (const con of cons) con.classList.remove("hidden")
 		document.querySelector(".users__container").style.flex = "0.25"
 		document.querySelector(".chat").style.flex = "0.75 1"
-		document.querySelector(".Category").style.justifyContent =
-			"space-between"
+		document.querySelector(".Category").style.justifyContent = "space-between"
 	}
 
 	const usersInfo = [
@@ -42,9 +42,9 @@ const Users = () => {
 	return (
 		<div className="users__container">
 			<div className="header__icons">
-				<div className="red__icon"/>
-				<div onClick={() => hide()} className="yellow__icon"/>
-				<div onClick={() => show()} className="green__icon"/>
+				<a className="red__icon" href={`${config.host}:9000/logout`}></a>
+				<div onClick={() => hide()} className="yellow__icon" />
+				<div onClick={() => show()} className="green__icon" />
 			</div>
 			<div className="Category">
 				<h2>Recent</h2>
