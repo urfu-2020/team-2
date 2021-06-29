@@ -1,13 +1,10 @@
 import {Avatar} from "@material-ui/core"
 import React from "react"
 
-const message = (login) => {
+const message = (login, avatarUrl) => {
 	return (
 		<div className="Message">
-			<Avatar
-				style={{alignSelf: "flex-end"}}
-				src="https://thiscatdoesnotexist.com/"
-			/>
+			<Avatar style={{alignSelf: "flex-end"}} src={avatarUrl} />
 			<div className="MessageBody">
 				<p>
           Hi, {login}! Lorem ipsum dolor sit amet consectetur adipisicing elit.

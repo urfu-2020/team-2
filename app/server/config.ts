@@ -10,6 +10,8 @@ const config = {
   clientPort: 80,
   serverPort: 9000,
   host: "http://localhost",
+  dbUser: process.env.DB_USER,
+  dbPass: process.env.DB_PASS,
 }
 
 module.exports = config

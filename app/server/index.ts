@@ -8,13 +8,13 @@ const {
   userURI,
   clientPort,
   serverPort,
+  dbUser,
+  dbPass,
 } = require("./config")
 const cors = require("cors")
 const session = require("express-session")
-import { Users, User } from "./db"
 
 const app = express()
-const db = new Users()
 
 app.use(express.json())
 app.use(
@@ -40,13 +40,6 @@ app.use("/user", require("./routes/user"))
 app.use("/login", require("./routes/login"))
 app.use("/oauth-callback", require("./routes/oauth-callback"))
 app.use("/logout", require("./routes/logout"))
-
-app.post("/logout", (req, res) => {
-  const userName = req.body.login
-  if (db.hasOwnProperty(userName)) {
-    db[userName].isLogin = false
-  }
-})
 
 app.get("/", (req, res) => {
   res.send("Hello, world!")

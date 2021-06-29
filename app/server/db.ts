@@ -1,13 +1,12 @@
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable require-jsdoc */
 export class User {
-  name: string
+  login: string
   avatar: string
-  isLogin: boolean
-  constructor(name: string, avatar: string, isLogin = false) {
-    this.name = name
+  // isLogin: boolean = false
+  constructor(login: string, avatar: string) {
+    this.login = login
     this.avatar = avatar
-    this.isLogin = isLogin
   }
 }
 

@@ -2,16 +2,16 @@ import React from "react"
 import "./ChatBody.scss"
 import message from "./Message"
 import myMessage from "./MyMessage"
-const chatBody = (login, avatarUrl) => {
+const chatBody = (login, myAvatar, friendAvatar) => {
 	return (
 		<div className="ChatBody">
-			{myMessage(avatarUrl)}
-			{message(login)}
-			{message(login)}
-			{message(login)}
-			{myMessage(avatarUrl)}
-			{myMessage(avatarUrl)}
-			{message(login)}
+			{myMessage(myAvatar)}
+			{message(login, friendAvatar)}
+			{message(login, friendAvatar)}
+			{message(login, friendAvatar)}
+			{myMessage(myAvatar)}
+			{myMessage(myAvatar)}
+			{message(login, friendAvatar)}
 		</div>
 	)
 }
