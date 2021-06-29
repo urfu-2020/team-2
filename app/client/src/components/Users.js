@@ -1,10 +1,11 @@
+/* eslint-disable no-tabs */
 import React from "react"
 import "./Users.scss"
 import SearchRoundedIcon from "@material-ui/icons/SearchRounded"
 import AddIcon from "@material-ui/icons/Add"
 import userItem from "./UserItem"
 import {config} from "../config"
-const Users = () => {
+const users = (friends, myName) => {
 	const hide = () => {
 		document.getElementsByTagName("h2")[0].classList.add("hidden")
 		document.querySelector(".IconWrapper").classList.add("hidden")
@@ -26,19 +27,19 @@ const Users = () => {
 		document.querySelector(".Category").style.justifyContent = "space-between"
 	}
 
-	const usersInfo = [
-		["Витя Дубровский", "Работаю до завтра", "8 min ago"],
-		["Патриарх Кефир", "Sent a photo", "03:56 PM"],
-		["Феечка Блум", "Я узнала, кто мои настоящие родители", "05:14 PM"],
-		["Стражница Вилл", "Дай сюда мой тост!", "Yesterday"],
-		[
-			"Banana Joe",
-			"первому клоуну класса самое место на первой странице",
-			"Yesterday",
-		],
-		["Локи", "Мяу", "Wed"],
-		["Цири", "Мы хотим кушац", "Wed"],
-	]
+	// const usersInfo = [
+	// 	["Витя Дубровский", "Работаю до завтра", "8 min ago"],
+	// 	["Патриарх Кефир", "Sent a photo", "03:56 PM"],
+	// 	["Феечка Блум", "Я узнала, кто мои настоящие родители", "05:14 PM"],
+	// 	["Стражница Вилл", "Дай сюда мой тост!", "Yesterday"],
+	// 	[
+	// 		"Banana Joe",
+	// 		"первому клоуну класса самое место на первой странице",
+	// 		"Yesterday",
+	// 	],
+	// 	["Локи", "Мяу", "Wed"],
+	// 	["Цири", "Мы хотим кушац", "Wed"],
+	// ]
 	return (
 		<div className="users__container">
 			<div className="header__icons">
@@ -57,9 +58,11 @@ const Users = () => {
 					</div>
 				</div>
 			</div>
-			{usersInfo.map((el) => userItem(el[0], el[1], el[2]))}
+			{friends.map((el) =>
+				userItem(el.login, `Hi, ${myName}`, "03:56 PM", el.avatar),
+			)}
 		</div>
 	)
 }
 
-export default Users
+export default users

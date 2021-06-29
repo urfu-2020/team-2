@@ -4,13 +4,13 @@ import "./ChatHeader.scss"
 import CallRoundedIcon from "@material-ui/icons/CallRounded"
 import VideocamRoundedIcon from "@material-ui/icons/VideocamRounded"
 import MoreHorizRoundedIcon from "@material-ui/icons/MoreHorizRounded"
-const ChatHeader = () => {
+const chatHeader = (login, avatarUrl) => {
 	return (
 		<div className="ChatHeader">
 			<div className="UserInfo">
-				<Avatar src="https://thiscatdoesnotexist.com/" />
+				<Avatar src={avatarUrl} />
 				<div className="UserBody">
-					<h3>User</h3>
+					<h3>{login}</h3>
 					<p>Last seen at 20:47</p>
 				</div>
 			</div>
@@ -29,4 +29,4 @@ const ChatHeader = () => {
 	)
 }
 
-export default ChatHeader
+export default chatHeader

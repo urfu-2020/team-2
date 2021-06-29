@@ -1,4 +1,4 @@
 export const config = {
-	host: "https://kilogram-team-2.herokuapp.com",
+	host: "http://localhost",
 	serverPort: 9000,
 }

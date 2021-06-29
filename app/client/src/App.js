@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import "./App.scss"
 import chat from "./components/Chat"
-import Users from "./components/Users"
+import users from "./components/Users"
 import LoginButton from "./components/Auth/LoginButton"
 
 import {config} from "./config"
@@ -34,8 +34,8 @@ function App() {
 				<LoginButton />
 			) : (
 				<>
-					<Users />
-					{chat(user.login, user.avatar_url)}
+					{users(user.friends, user.login)}
+					{chat(user.login, user.avatar_url, user.friends)}
 				</>
 			)}
 		</div>
